@@ -135,7 +135,7 @@ if __name__ == "__main__":
             # Detect available faces in frame
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             # you can change the scaleFactor & minNeighbors if required
-            faces = cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5)
+            faces = cascade.detectMultiScale(gray, scaleFactor=1.8, minNeighbors=3)
             # for x, y, w, h in faces:
             #     frame = cv2.rectangle(frame, (x, y), (x + w, y + h), (255, 255, 0), 2)
 
